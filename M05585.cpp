@@ -8,10 +8,10 @@ void dfs(int i, int j, int n, char m[33][33], char l, vector<vector<bool>>&visit
         return;
     
     visited[i][j] = true;
-    dfs(i+1, j, n, m, l, visited); // 下
-    dfs(i-1, j, n, m, l, visited); // 上  
-    dfs(i, j+1, n, m, l, visited); // 右
-    dfs(i, j-1, n, m, l, visited); // 左
+    dfs(i+1,j,n,m,l,visited); 
+    dfs(i-1,j,n,m,l,visited); 
+    dfs(i,j+1,n,m,l,visited); 
+    dfs(i,j-1,n,m,l,visited); 
 }
 int cc(int n,char m[33][33],char l){
     int ret=0;
